@@ -31,8 +31,8 @@ public class CircleParticleGenerator
         System.out.println("particle minecraft:" + particle + " ~" + yVal + " ~ ~" + (xVal * -1) + " 0 0 0 0 0");
         while(xVal > radius * -1) 
         {
-            if(count <= 2 || count >= 39)
-                xVal = xVal - (decrement * 0.7);
+            if(count <= 6 || count >= 44)
+                xVal = xVal - (decrement * 0.2);
             else 
                 xVal = xVal - decrement;
             yVal = Math.sqrt(Math.pow(radius,2) - Math.pow(xVal,2)); //Calculates y coordinate
@@ -44,5 +44,6 @@ public class CircleParticleGenerator
             System.out.println("particle minecraft:" + particle + " ~" + df.format(yVal * -1) + " ~ ~" + df.format(xVal) + " 0 0 0 0 0");
             count++;
         }
+        System.out.println(count);
     }
 }
