@@ -44,6 +44,5 @@ public class CircleParticleGenerator
             System.out.println("particle minecraft:" + particle + " ~" + df.format(yVal * -1) + " ~ ~" + df.format(xVal) + " 0 0 0 0 0");
             count++;
         }
-        System.out.println(count);
     }
 }
